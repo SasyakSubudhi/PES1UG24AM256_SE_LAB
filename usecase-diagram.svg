@@ -1,0 +1,46 @@
+<svg width="680" height="970" viewBox="0 0 680 970" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>UML use case diagram for the Hostel Maintenance and Issue Ticketing System</title>
+<desc>Hostel Resident and Maintenance Warden actors with their use cases inside the system boundary. Includes an include relationship from Log maintenance ticket to Attach photo evidence, and an extend relationship from Flag as emergency to Log maintenance ticket.</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#444441" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="680" height="970" fill="#ffffff"/>
+<rect x="110" y="40" width="470" height="900" rx="16" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="345" y="70" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">Hostel maintenance and issue ticketing system</text>
+
+<line x1="55" y1="380" x2="345" y2="120" stroke="#444441" stroke-width="0.5"/>
+<line x1="55" y1="380" x2="345" y2="510" stroke="#444441" stroke-width="0.5"/>
+<line x1="55" y1="380" x2="345" y2="640" stroke="#444441" stroke-width="0.5"/>
+<line x1="625" y1="315" x2="345" y2="250" stroke="#444441" stroke-width="0.5"/>
+<line x1="625" y1="315" x2="345" y2="380" stroke="#444441" stroke-width="0.5"/>
+
+<circle cx="55" cy="350" r="10" fill="none" stroke="#444441" stroke-width="1"/>
+<line x1="55" y1="360" x2="55" y2="390" stroke="#444441" stroke-width="1"/>
+<line x1="43" y1="370" x2="67" y2="370" stroke="#444441" stroke-width="1"/>
+<line x1="55" y1="390" x2="45" y2="410" stroke="#444441" stroke-width="1"/>
+<line x1="55" y1="390" x2="65" y2="410" stroke="#444441" stroke-width="1"/>
+<text x="55" y="428" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#2C2C2A">Hostel resident</text>
+
+<circle cx="625" cy="285" r="10" fill="none" stroke="#444441" stroke-width="1"/>
+<line x1="625" y1="295" x2="625" y2="325" stroke="#444441" stroke-width="1"/>
+<line x1="613" y1="305" x2="637" y2="305" stroke="#444441" stroke-width="1"/>
+<line x1="625" y1="325" x2="615" y2="345" stroke="#444441" stroke-width="1"/>
+<line x1="625" y1="325" x2="635" y2="345" stroke="#444441" stroke-width="1"/>
+<text x="625" y="363" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#2C2C2A">Maintenance warden</text>
+
+<path d="M345,148 C150,300 150,600 345,742" fill="none" stroke="#444441" stroke-width="0.5" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+<text x="150" y="450" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#2C2C2A">&lt;&lt;include&gt;&gt;</text>
+
+<path d="M345,872 C540,700 540,300 345,148" fill="none" stroke="#444441" stroke-width="0.5" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+<text x="540" y="450" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#2C2C2A">&lt;&lt;extend&gt;&gt;</text>
+
+<g><ellipse cx="345" cy="120" rx="85" ry="28" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text x="345" y="124" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#04342C">Log maintenance ticket</text></g>
+<g><ellipse cx="345" cy="250" rx="85" ry="28" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/><text x="345" y="254" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#4A1B0C">Assign technician</text></g>
+<g><ellipse cx="345" cy="380" rx="85" ry="28" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/><text x="345" y="384" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#4A1B0C">Update ticket status</text></g>
+<g><ellipse cx="345" cy="510" rx="85" ry="28" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text x="345" y="514" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#04342C">Track ticket status</text></g>
+<g><ellipse cx="345" cy="640" rx="95" ry="28" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text x="345" y="644" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#04342C">Provide closure sign-off</text></g>
+<g><ellipse cx="345" cy="770" rx="95" ry="28" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/><text x="345" y="774" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#26215C">Attach photo evidence</text></g>
+<g><ellipse cx="345" cy="900" rx="90" ry="28" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/><text x="345" y="904" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#26215C">Flag as emergency</text></g>
+</svg>
