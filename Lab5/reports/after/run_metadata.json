@@ -1,0 +1,17 @@
+{
+  "pylint": {
+    "command": "-m pylint --rcfile= --persistent=no supplier_orders.py",
+    "exit_code": 0,
+    "stdout_bytes": 76
+  },
+  "bandit": {
+    "command": "-m bandit -r supplier_orders.py",
+    "exit_code": 0,
+    "stdout_bytes": 431
+  },
+  "flake8": {
+    "command": "-m flake8 --isolated supplier_orders.py",
+    "exit_code": 0,
+    "stdout_bytes": 0
+  }
+}

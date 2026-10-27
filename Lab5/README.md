@@ -1,51 +1,49 @@
-# Lab 5: Static Code Analysis — Supplier Purchase Order Tracker
+# Lab 5: Static Code Analysis
 
-**Your file:** `supplier_orders.py`
-
-Follow the lab handout for the full instructions.
-
-## About the program
-
-A purchase order tracker for a stores department. It places orders with suppliers, marks deliveries as received, notifies the warehouse and cleans up fulfilled orders.
-
-The code works, but only just. It has quality, style and security problems of the kind Pylint, Flake8 and Bandit are built to find.
-
-## What to do
-
-1. **Run it first** and read the output carefully:
-   ```bash
-   python supplier_orders.py
-   ```
-   It runs a short demonstration and may create a small output file in the current folder, so run it from a folder you don't mind adding files to.
-
-2. **Install the tools:**
-   ```bash
-   pip install pylint bandit flake8
-   ```
-
-3. **Run the analysis** and save the reports:
-   ```bash
-   pylint supplier_orders.py > pylint_report.txt
-   bandit -r supplier_orders.py > bandit_report.txt
-   flake8 supplier_orders.py > flake8_report.txt
-   ```
-
-4. **Document the issues** in `issues.md` using this table (at least 4 rows, high and medium severity first):
-
-   | Issue | Type | Line(s) | Description | Fix Approach |
-   |-------|------|---------|-------------|--------------|
-   | ... | ... | ... | ... | ... |
-
-5. **Fix the code.** Fix at least 4 of the issues you documented, then rerun all three tools to confirm they are gone. Repeat until you are satisfied. The program should still do its job when you are done.
-
-6. **Reflect.** Answer the four reflection questions from the handout in `reflection.md`.
+**Name:** Sasyak Subudhi  
+**SRN:** PES1UG24AM256
 
 ## Deliverables
 
-1. `supplier_orders.py`: your cleaned version, with at least 4 issues fixed.
-2. `issues.md`: the completed issue table.
-3. `reflection.md`: your answers to the reflection questions.
+- [Updated Python source](supplier_orders.py)
+- [PDF report](report.pdf) and [editable report](report.md)
+- [Issue table](issues.md)
+- [Reflections](reflection.md)
+- [Before-analysis reports](reports/before)
+- [After-analysis reports](reports/after)
+- [Executed tests](reports/tests.txt) and [demo output](reports/demo.txt)
+- [Regression test source](test_supplier_orders.py)
+- [Tool versions](requirements-tools.txt)
 
-**Target:** aim for a Pylint score above 9.5 on your final file. A perfect 10.00/10 is very good.
+## Verified results
 
-Be ready to explain the bugs you found and how you fixed them. You may be called on to present.
+| Tool | Before | After |
+|---|---|---|
+| Pylint | 2.41/10 | 10.00/10 |
+| Bandit | 3 findings | 0 findings |
+| Flake8 | 4 findings | 0 findings |
+
+All eight regression tests passed. The empty final Flake8 report is expected; its recorded exit code is 0.
+
+## Three fix commits
+
+The three Lab 5 commits on this repository's main branch separately record Bandit security fixes, Pylint code-quality fixes, and Flake8 formatting plus final deliverables. They reproduce the three local preparation stages within this repository's existing history.
+
+The PDF, report.md and SUBMISSION_README.md were prepared before this upload; their statements about local commits and no remote upload describe that preparation stage. The submission is now available in this Lab5 folder. The local ZIP and its embedded original Git history remain an offline copy. No LMS submission was performed.
+
+## Reproduce
+
+Create and activate a Python 3.12 virtual environment, then run from this folder:
+
+```text
+python -m pip install -r requirements-tools.txt
+python supplier_orders.py
+python -m pylint --rcfile= --persistent=no supplier_orders.py
+python -m bandit -r supplier_orders.py
+python -m flake8 --isolated supplier_orders.py
+python -m unittest -v
+```
+
+The supplied handout omitted the reflection questions referenced in the assignment README. reflection.md clearly labels the four learning-outcome prompts used instead.
+
+[Original assignment README](ASSIGNMENT_README.md)

@@ -1,0 +1,13 @@
+test_database_errors_are_visible (test_supplier_orders.SupplierOrdersTests.test_database_errors_are_visible) ... ok
+test_demo_output (test_supplier_orders.SupplierOrdersTests.test_demo_output) ... ok
+test_import_has_no_demo_side_effects (test_supplier_orders.SupplierOrdersTests.test_import_has_no_demo_side_effects) ... ok
+test_new_database_has_independent_state (test_supplier_orders.SupplierOrdersTests.test_new_database_has_independent_state) ... ok
+test_notification_does_not_call_shell (test_supplier_orders.SupplierOrdersTests.test_notification_does_not_call_shell) ... ok
+test_received_cleanup_preserves_pending_orders (test_supplier_orders.SupplierOrdersTests.test_received_cleanup_preserves_pending_orders) ... ok
+test_sql_payload_is_stored_as_data (test_supplier_orders.SupplierOrdersTests.test_sql_payload_is_stored_as_data) ... ok
+test_total_stays_cumulative_after_cleanup (test_supplier_orders.SupplierOrdersTests.test_total_stays_cumulative_after_cleanup) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.013s
+
+OK
