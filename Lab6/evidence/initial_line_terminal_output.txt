@@ -1,0 +1,14 @@
+Sasyak Subudhi | PES1UG24AM256
+Lab 6 - Initial Line Coverage
+
+> python -m coverage run --source=atm_withdrawal -m pytest -q test_atm_withdrawal.py
+..                                                                       [100%]
+2 passed in 0.04s
+
+> python -m coverage report -m
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+atm_withdrawal.py      34     20    41%   6, 8, 10, 13-15, 17, 23, 26-28, 32-41
+-------------------------------------------------
+TOTAL                  34     20    41%
+
