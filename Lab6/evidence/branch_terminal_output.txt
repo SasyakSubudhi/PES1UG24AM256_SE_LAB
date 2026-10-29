@@ -1,0 +1,14 @@
+Sasyak Subudhi | PES1UG24AM256
+Lab 6 - Branch Coverage
+
+> python -m coverage run --branch --source=atm_withdrawal -m pytest -q BranchCoverageTest_atm_withdrawal.py
+.........................................                                [100%]
+41 passed in 0.15s
+
+> python -m coverage report -m --fail-under=90
+Name                Stmts   Miss Branch BrPart  Cover   Missing
+---------------------------------------------------------------
+atm_withdrawal.py      34      0     22      0   100%
+---------------------------------------------------------------
+TOTAL                  34      0     22      0   100%
+
